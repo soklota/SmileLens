@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'com.example.smilelens'
     compileSdk 33
+    compileSdkPreview "UpsideDownCake"
 
     defaultConfig {
         applicationId "com.example.smilelens"
@@ -38,6 +39,7 @@ android {
 
 dependencies {
 
+    implementation 'androidx.core:core-ktx:+'
     def camerax_version = "1.1.0-beta01"
     implementation "androidx.camera:camera-core:${camerax_version}"
     implementation "androidx.camera:camera-camera2:${camerax_version}"
